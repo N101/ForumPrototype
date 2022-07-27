@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="CommentsCellType" customModule="ForumApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7v-ef-QNc">
+                        <rect key="frame" x="16" y="11" width="256" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="t12-tR-Dat"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsH-qD-il7">
+                        <rect key="frame" x="16" y="27" width="256" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="IsH-qD-il7" secondAttribute="bottom" constant="-3" id="1fF-1Y-yed"/>
+                    <constraint firstItem="G7v-ef-QNc" firstAttribute="leading" secondItem="IsH-qD-il7" secondAttribute="leading" id="Ld3-pl-Zw2"/>
+                    <constraint firstItem="G7v-ef-QNc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LmF-lC-ATg"/>
+                    <constraint firstItem="G7v-ef-QNc" firstAttribute="trailing" secondItem="IsH-qD-il7" secondAttribute="trailing" id="Ukb-mJ-6dF"/>
+                    <constraint firstItem="G7v-ef-QNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eXl-rr-yyN"/>
+                    <constraint firstItem="IsH-qD-il7" firstAttribute="top" secondItem="G7v-ef-QNc" secondAttribute="bottom" constant="9" id="gsz-7Y-gLX"/>
+                    <constraint firstItem="G7v-ef-QNc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hph-2r-Zh0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Comment" destination="IsH-qD-il7" id="sCl-45-c33"/>
+                <outlet property="User" destination="G7v-ef-QNc" id="N6A-vI-eWa"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="23"/>
+        </tableViewCell>
+    </objects>
+</document>
